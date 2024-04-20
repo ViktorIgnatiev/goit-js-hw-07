@@ -17,3 +17,8 @@ items.forEach(item => {
     const itemList = item.querySelectorAll('li').length;
     console.log(`Category: ${itemName} \nElements: ${itemList}`);
 });
+
+const allLiItems = document.querySelectorAll('#categories .item li');
+console.log(allLiItems);
+allLiItems.forEach(liItem => liItem.classList.add('list-item-style'))
+

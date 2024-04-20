@@ -13,7 +13,36 @@ body {
   line-height: 1.5;
 }
 
-/* Task 2 */
+ul {
+  list-style-type: none;
+}
+
+
+/* ====================================TASK 1 ==============================================*/
+
+#categories{
+  list-style-type: none;
+}
+
+.item {
+  background-color: #F6F6FE;
+border-radius: 8px;
+padding: 32px;
+margin-bottom: 16px;
+
+}
+
+.list-item-style{
+width: 360px;
+height: 40px;
+border: 1px solid #212121;
+border-radius: 4px;
+padding: 8px 16px;
+margin-bottom: 8px;
+}
+
+
+/* ====================================TASK 2 ==============================================*/
 .gallery {
   list-style: none;
   padding: 0;
@@ -21,13 +50,84 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
+}
+
+.gallery-list{
+  flex-basis: calc(33.33% - 10px); 
+  margin-right: 10px; 
+  margin-bottom: 10px; 
+}
+
+.gallery-list img {
+  width: 100%; 
+  height: auto; 
 }
 
 
+/* ====================================TASK 3 ==============================================*/
 
+.input-style3 {
+  border-color: #808080;
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding: 8px, 72px;
+  width: 360px;
+  height: 40px;
+}
 
+/* ====================================TASK 4 ==============================================*/
 
-/* TASK 6 */
+.login-form{
+  display: flex;
+  flex-direction: column  
+}
+
+.label-style4{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-style4{
+  border-radius: 8px;
+  border: 1px solid gray;
+  width: 360px;
+  height: 40px;
+}
+
+.btn-style4{
+  background-color: #4E75FF;
+  border-radius: 8px;
+  border: 1px;
+  padding: 8px, 16px;
+  width: 120px;
+  height: 40px;
+}
+
+/* ====================================TASK 5 ==============================================*/
+
+.widget{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentText-style5{
+  text-align: center;
+}
+
+.change-color{
+  background-color: #4E75FF;
+  border-radius: 8px;
+  border: 1px;
+  padding: 8px, 16px;
+  width: 120px;
+  height: 40px;
+  margin: auto;
+}
+
+/* ====================================TASK 6 ==============================================*/
 
 #controls {
 background-color: #F6F6FE;
@@ -43,7 +143,7 @@ margin-bottom: 16px;
 .input-style{
   border-color: #808080;
   border-radius: 8px;
-  border: 1px;
+  border: 1px solid gray;
   padding: 8px, 72px;
   width: 150px;
   height: 40px;

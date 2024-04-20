@@ -13,4 +13,4 @@ input.addEventListener('input',(event) => {
     span.textContent = event.currentTarget.value;
 })
 
-
+input.classList.add('input-style3')

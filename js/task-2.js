@@ -37,17 +37,18 @@ const imageGalerryFoo = () => {
   images.forEach(image => {
     const galerryList = document.createElement('li')
 const galerryImage = document.createElement('img')
-    galerryImage.height = 100;
-    galerryImage.width = 100;
+    galerryImage.height = 300;
+    galerryImage.width = 360;
     galerryList.classList.add('gallery-list')
     galerryImage.src = image.url
     galerryImage.alt = image.alt
     galerryList.appendChild(galerryImage)
     ulList.appendChild(galerryList);
+    // galerryImage.classList.add(img-style)
   });
   }
 
 console.log(imageGalerryFoo());
   
-
+// ulList.justifyContent = 'center';
 // ulList.append(galerry, galerryImage);

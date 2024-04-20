@@ -16,3 +16,7 @@ const changeColorBtnFoo = () =>{
 
 
 changeColorBtn.addEventListener('click', changeColorBtnFoo)
+
+const contentText = document.querySelector('.widget p')
+contentText.classList.add('contentText-style5')
+
