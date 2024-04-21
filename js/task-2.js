@@ -28,12 +28,12 @@ const images = [
 
 const ulList = document.querySelector('.gallery')
 
-console.log(ulList);
+// console.log(ulList);
 
 
 
 const imageGalerryFoo = () => {
-  
+  const fragment = document.createDocumentFragment(); 
   images.forEach(image => {
     const galerryList = document.createElement('li')
 const galerryImage = document.createElement('img')
@@ -43,12 +43,16 @@ const galerryImage = document.createElement('img')
     galerryImage.src = image.url
     galerryImage.alt = image.alt
     galerryList.appendChild(galerryImage)
-    ulList.appendChild(galerryList);
+    fragment.appendChild(galerryList);
     // galerryImage.classList.add(img-style)
   });
+  ulList.appendChild(fragment)
   }
 
-console.log(imageGalerryFoo());
+  imageGalerryFoo()
+
+
+// console.log(imageGalerryFoo());
   
 // ulList.justifyContent = 'center';
 // ulList.append(galerry, galerryImage);

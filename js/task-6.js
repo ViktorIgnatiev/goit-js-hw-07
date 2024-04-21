@@ -16,6 +16,7 @@ destroyBtn.classList.add('destroyBtn-style')
 boxesContainer.classList.add('box-div-stile')
 
 function createBoxes(amount) {
+  const fragment = document.createDocumentFragment();
   destroyBoxes(); 
 
   for (let i = 0; i < amount; i++) {
@@ -24,8 +25,9 @@ function createBoxes(amount) {
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
-    boxesContainer.appendChild(box);
+    fragment.appendChild(box);
   }
+  boxesContainer.appendChild(fragment)
 }
 
 function destroyBoxes() {
